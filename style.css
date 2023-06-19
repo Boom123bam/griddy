@@ -208,3 +208,30 @@ button:hover {
   margin-top: 0.5rem;
   width: 10rem;
 }
+.person {
+  max-width: 15rem;
+  /* margin-inline: auto; */
+}
+
+@media screen and (max-width: 600px) {
+  .section {
+    grid-template-columns: 1fr;
+    grid-template-rows: 20rem auto;
+  }
+
+  .hero {
+    grid-template-rows: auto 20rem;
+  }
+
+  .logos-wrapper {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 3rem 3rem;
+  }
+
+  .people {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    gap: 2rem;
+    justify-items: center;
+  }
+}
